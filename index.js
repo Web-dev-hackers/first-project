@@ -10,9 +10,19 @@ submitBtn.onclick = () => {
   newCard.style.display = "block";
   let nameValue = nameInput.value;
   let desValue = desInput.value;
-
-  newCard.querySelector("img").setAttribute("src", "./pizza2.jfif");
   newCard.querySelector("h4").innerText = nameValue;
   newCard.querySelector("p").innerText = desValue;
-  cardsCon.appendChild(newCard);
+
+  if (imageInput.files && imageInput.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+      newCard.querySelector("img").setAttribute("src", e.target.result);
+      cardsCon.appendChild(newCard);
+    };
+
+    reader.readAsDataURL(imageInput.files[0]);
+  } else {
+    cardsCon.appendChild(newCard);
+  }
 };
