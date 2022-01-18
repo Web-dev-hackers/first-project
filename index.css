@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+}
+
+.contentCon {
+  display: flex;
+}
+
+.itemDiv {
+  width: 200px;
+  height: 200px;
+  margin: 20px 20px;
+  display: none;
+}
+
+.itemImage {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  display: block;
+}

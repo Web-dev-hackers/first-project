@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1st project</title>
+  <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="formCon">
+      <h1>add item</h1>
+      <div style="margin: 20px 10px;" >
+        <label>Name: </label>
+        <input type="text" id="name" />
+      </div>
+      <div style="margin: 20px 10px;" >
+        <label>description: </label>
+        <input type="text" id="des" />
+      </div>
+      <div style="margin: 20px 10px;" >
+        <label>upload image: </label>
+        <input type="file" id="image" />
+      </div>
+      <button  id="submit-btn" style="margin: auto; display: block;">Add</button>
+    </div>
+    <div class="contentCon" id="cardsCon">
+      <div class="itemDiv" id="card" >
+        <img class="itemImage" alt="pizza" id="card-img" src="./pizzza.jfif" />
+        <!-- <div> -->
+          <h4 style="text-align: center;" >name</h4>
+          <p>this pizza is so delicious and fantastic, you'll eat your finger after it</p>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./index.js" ></script>
+</html>
